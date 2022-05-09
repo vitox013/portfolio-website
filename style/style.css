@@ -26,6 +26,7 @@ a:hover {
 h1{
     font-size: 23px;
 }
+
 h2 {
     font-size: 20px;
 }
@@ -51,7 +52,7 @@ body {
     margin-bottom: 0px;
 }
 #containerprincipal {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     justify-content: center;
 }
@@ -232,6 +233,7 @@ footer {
     display: flex;
     justify-items: center;
     justify-content: center;
+    padding: 20px 0px;
 }
 
 @media (max-width: 420px) {
@@ -267,7 +269,6 @@ footer {
     a#footer {
         display: flex;
         flex-direction: column;
-        color: white;
     }
 
 
@@ -282,6 +283,14 @@ footer {
         display: flex;
         font-size: 10px;
         margin-bottom: 0px;
+    }
+
+    #projeto1 div.git {
+        margin-top: 50px;
+    }
+
+    #projeto2 div.git{
+        margin-top: 35px;
     }
 
 
@@ -303,6 +312,27 @@ footer {
         flex-wrap: wrap;
     }
   }
+
+  @media (min-width: 450) and (max-width: 1000){
+      h1{
+          color: white;
+      }
+  }
+
+  @media only screen and (max-width: 1024px) {
+        body {
+            padding: 0px 2rem;
+        }
+   }
+
+   @media only screen and (max-width: 870px) {
+    body {
+        padding: 0px 2rem;
+    }
+    main {
+        flex-direction: column;
+    }
+}
 
 /* @media (max-width: 360px) {
 
