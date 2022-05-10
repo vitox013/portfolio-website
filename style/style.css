@@ -52,7 +52,6 @@ body {
     margin-bottom: 0px;
 }
 #containerprincipal {
-    display: flexbox;
     flex-direction: column;
     justify-content: center;
 }
@@ -236,7 +235,7 @@ footer {
     padding: 20px 0px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 420px){
 
     *{
         margin: 0;
@@ -313,7 +312,7 @@ footer {
     }
   }
 
-  @media (min-width: 450) and (max-width: 1000){
+  @media (max-width: 1000px) and (min-width: 450px){
       h1{
           color: white;
       }
@@ -323,14 +322,24 @@ footer {
         body {
             padding: 0px 2rem;
         }
+
    }
 
    @media only screen and (max-width: 870px) {
     body {
         padding: 0px 2rem;
     }
-    main {
+    .container {
         flex-direction: column;
+    }
+
+    aside {
+        flex: 1;
+        width: auto;
+    }
+
+    section#education {
+        padding: 2rem;
     }
 }
 
