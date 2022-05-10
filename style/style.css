@@ -235,14 +235,20 @@ footer {
     padding: 20px 0px;
 }
 
-@media (max-width: 420px){
+@media (max-width: 420px) and (min-width: 250px){
 
     *{
         margin: 0;
     }
 
     body{
-        padding: 0px 20px;
+        padding: 0;
+    }
+
+    #containerprincipal {
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
     }
     .container {
         flex-direction: column;
@@ -250,38 +256,35 @@ footer {
     }
 
     aside {
-        width: 320px;
+        width: 90vw;
     }
 
     main {
-        display: block;
+        display: flex;
         flex-direction: column;
-        width: 320px;
+        width: 90vw;
+    }
+
+    section {
+        padding: 30px;
+    }
+
+    div.projetos {
+        display: flex;
+        gap: .5rem;
     }
 
     a.linksprojects{
         display: flex;
         flex-basis: 50%;
-        width: 300px;
     }
 
-    a#footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    div.projetos {
-        display: flex;
-        width: 300px;
-        gap: .5rem;
-        flex-basis: 50%;
-    }
 
     div.git{
         display: flex;
         font-size: 10px;
         margin-bottom: 0px;
+        flex: 1;
     }
 
     #projeto1 div.git {
@@ -292,11 +295,15 @@ footer {
         margin-top: 35px;
     }
 
-
+   
     section#projeto1, section#projeto2 {
         display: flex;
         padding: 10px;
-        width: 135px;
+        width: 30vw;
+    }
+
+    .projetos h3 {
+        flex-wrap: wrap;
     }
 
     #projeto1 h3 img{
@@ -310,22 +317,26 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    a#footer {
+        display: flex;
+        flex-direction: column;
+    }
   }
 
-  @media (max-width: 1000px) and (min-width: 450px){
-      h1{
-          color: white;
-      }
-  }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1280px) and (min-width: 871px){
+
         body {
             padding: 0px 2rem;
         }
 
+        div.git {
+            flex: 1;        
+        }
    }
 
-   @media only screen and (max-width: 870px) {
+   @media only screen and (max-width: 870px) and (min-width: 451px){
     body {
         padding: 0px 2rem;
     }
@@ -342,130 +353,3 @@ footer {
         padding: 2rem;
     }
 }
-
-/* @media (max-width: 360px) {
-
-    *{
-        margin: 0;
-    }
-    
-    body{
-        display: flex;
-        width: 70%;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section#links, section#technologies, section#education {
-        padding-left: 15px;
-    }
-
-    aside {
-        width: 310px;
-    }
-
-    main {
-        width: 310px;
-    }
-    a.linksprojects{
-        display: flex;
-        flex-basis: 50%;
-    }
-
-    div.projetos {
-        display: flex;
-        width: 310px;
-        gap: .5rem;
-        flex-basis: 50%;
-    }
-
-    section#projeto1, section#projeto2 {
-        display: flex;
-        padding: 10px;
-        width: 155px;
-    }
-    
-  } */
-
-/* @media (max-width: 320px) {
-    *{
-        margin: 0;
-    }
-    
-    body{
-        display: flex;
-        width: 70%;
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 18px;
-    }
-
-    h2{
-        font-size: 16px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 9px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section#links, section#technologies, section#education {
-        padding-left: 15px;
-    }
-
-    aside {
-        width: 270px;
-    }
-
-    main {
-        width: 270px;
-    }
-
-    a.linksprojects{
-        display: flex;
-        flex-basis: 50%;
-    }
-
-    div.projetos {
-        display: flex;
-        width: 270px;
-        gap: .5rem;
-    }
-
-    section#projeto1, section#projeto2 {
-        display: flex;
-        padding: 10px;
-        width: 135px;
-    }
-
-    #projeto1 h3 img{
-        margin-right: 4px;
-    }
-
-    #projeto2 h3 img{
-        margin-right: 4px;
-    }
-
-    #technologies li {
-        width: 50px;
-        font-size: 8px;
-    }
-
-    .ano {
-        font-size: 9px;
-    }
-
-    
-
-  } */
